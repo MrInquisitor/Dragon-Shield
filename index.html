@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Seth Choate">
+    <title>Dragon Shield</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="./style.css">
+    <!--importing JS file and using defer to make the js load after the webpage-->
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1 id="headerTitle">Dragon Shield</h1>
+        <nav>
+            <!-- Header menu-->
+            <ul>
+                <li><a href="#lrgImg">About</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Light mode Dark mode button-->
+        <button type="submit" id="mode">
+            <img id="modeImg" src="imgs/DarkMode.png" alt ="ld mode button">
+        </button>
+    </div>
+
+    <main>
+        <section id="lrgImg">
+            <img id="dragonBanner" src="imgs/DragonShield.jpg_large" alt="Dragon Shield Banner">
+        </section>
+        <div id="middleGrid">
+            <section id="about">
+            <h2>Dragon Shield Card sleeves</h2>
+            <img id="aboutImg" src="imgs/234afbb0Dragon-Shield-100-Classic-Green-Sleeves-Mox-Boarding-House-Seattle__58851.jpg" alt="Dragon Shield Banner">
+            <p>Dragon Shield sleeves are the best card sleeves on the market! They will protect your cards better than any other brand. They are more durable and they shuffle better than the rest!<br><br>
+            Dragon Shield is one of the most recognizable brands within gaming accessories in the world. Known for their strength,durability, and fantastic value, players and retailers know that Dragon Shield products truly are “Tough as Scales.”
+            For those in need of protection, either against the dark magic of an evil mage, or the everyday scuffle of intense cardplay, there is only one choice: Dragon Shield.</p>
+            </section>
+
+            <section id="products">
+                <h2>Shop</h2>
+                <div id="indProduct">
+                    <img id="productImg" src="imgs/Dragon-Shield-Purple.jpg" alt="Dragon Shield Purple">
+                    <dl>
+                        <dt id="itemDesc">Dragon Shield Purple Card Sleeves</dt> 
+                        <dd>$14.99</dd>
+                    </dl>
+                </div>
+                <div id="proBtns">
+                    <button class="proBtns" type="button" id="purple">Dragon Shield Purple</button><br>
+                    <button class="proBtns" type="button" id="black">Dragon Shield Black</button><br>
+                    <button class="proBtns" type="button" id="midnight">Dragon Shield Midnight</button><br>
+                    <button class="proBtns" type="button" id="silver">Dragon Shield Silver</button><br>
+                    <button class="proBtns" type="button" id="turqoise">Dragon Shield Turqoise</button>
+                </div>
+            </section>
+        </div>
+        <section id="game">
+            <h2>Play & Win</h2>
+            <p>Enter a Number between 1 and 10 in the box<br>
+            We will generate a random number. if your guess matches, you win!<br><br>
+            If you win you will be entered into a sweepstakes to earn some free card sleeves!</p>
+            <form id = "gameForm">
+                <label for="guess">Enter a Number Between 1 and 10:</label>
+                <input type="guess" id="guess" name="guess"><br>
+                <input type="submit" id="submitBtn" value="Take a Guess!">
+            </form>
+        </section>
+        <!--Contact Form-->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="form">
+                <div>
+                    <label for="name">Your Name:<span class="required">*</span></label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="pNumber">Phone Number:</label>
+                    <input type="text" id="pNumber" name="pNumber">
+                </div>
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div>
+                    <label for="comments">Comments:<span class="required">*</span></label>
+                    <input type="textbox" id="comments" name="comments">
+                </div>
+                <fieldset>
+                <legend>How would you like to be contacted?<span class="required">*</span></legend>
+                    <input type="radio" id="phoneRad" name="contactStyle" value="pNumber" required checked>
+                    <label for="phoneRad">Phone Number</label>
+                    <input type="radio" id="emailRad" name="contactStyle" value="email" required>
+                    <label for="emailRad">Email</label>
+                </fieldset><span id="radChoice"></span>
+                <input  id="contactBtn" type="submit" value="Submit">
+            </form>
+            <div id="output"></div>
+        </section>
+    </main>
+</body>
+    <!--Footer-->
+    <footer>
+        <P>Copyright © 2023 by Dragon Shield</P>
+    </footer>
+
+</html>

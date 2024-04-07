@@ -1,0 +1,248 @@
+/*Global and font Styles*/
+h1,h2,nav a,nav li,form,footer {
+    font-family: 'Georgia', serif;
+}
+
+p,input,dt,dd {
+    font-family: 'Trebuchet', sans-serif;
+}
+dd {
+    font-weight: bold;
+}
+nav{
+    display: inline-flex;
+}
+li
+{
+    list-style-type: none;
+}
+/* Submit button styles */
+input[type="submit"] {
+    width: 25%;
+    margin: 0 auto;
+} 
+
+#proBtns button, input[type="submit"] {
+    display: block;
+    padding: 1rem;
+    background-color: #0F0326;
+    color: #F5F7DC;
+    border: none;
+    box-shadow: 10px 5px 5px black;
+    cursor: pointer;
+}
+#proBtns button {
+    width : 25%;
+}
+#contact input[type="submit"] {
+    display: block;
+    padding: 1rem;
+    background-color: #F5F7DC;
+    color: #0F0326;
+    border: none;
+    box-shadow: 10px 5px 5px black;
+}
+/* Hover Styles*/
+#modeImg:hover {
+    background-color: #E65F5C;
+    border-radius: 5px;
+}
+
+/*Colors, size and position */
+#header{
+    position: relative;
+}
+nav{
+    position: absolute;
+    bottom: 0px;
+}
+nav ul {
+    display: inline-flex;
+    margin-bottom: 50px;
+}
+ul li {
+    padding: 0px 25px;
+    height: 20px;
+}
+a{
+    text-decoration: none;
+    font-size: larger;
+    display: block;
+    padding: 1rem;
+    background-color: #F5F7DC;
+    color: #0F0326;
+    border: none;
+    box-shadow: 10px 5px 5px black;
+    cursor: pointer;
+
+}
+
+h1,h2{
+    font-weight: bold;
+    text-align: left;
+    padding-left: 20px;
+}
+h1 {
+    font-size: 75px;
+}
+html,
+body {
+    width: 1280px;
+    margin: auto;
+}
+html{
+    background-color: #F5F7DC;
+}
+body {
+    display: grid;
+    background-color: white;
+    text-align: center;
+
+}
+p {
+    font-size: larger;
+}
+form {
+    font-size: larger;
+}
+#header,
+footer {
+    background-color: #FFFF82;
+    color: #0F0326;
+    width: 100%;
+}
+dd, dt {
+    text-align: left;
+}
+/* styles for mode switch button */
+#mode {
+    appearance: none;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+#mode,
+#modeImg {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#modeImg {
+    border: 0;
+}
+/* styles for Dragon banner img */
+#lrgImg {
+    background-color: #0F0326;
+    color: #F5F7DC;
+    width: 100%;
+}
+
+#dragonBanner {
+    width: 80%;
+    
+}
+
+/* styles for about section */
+#about {
+    display: inline-grid;
+    grid-gap: 50px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+#aboutImg {
+    height: 400px;
+    padding-left: 20px;
+    grid-column-start: 1;
+}
+#about p {
+    padding-right: 20px;
+    grid-column-start: 2 ;
+}
+#middleGrid{
+    display: grid;
+}
+/* styles for products */
+#proBtns{
+   
+    grid-column-start: 1; 
+    margin-left: 350px;
+}
+#proBtns button {
+    width: 25%;
+}
+#indProduct {
+    position: absolute;
+    padding-top: 25px;
+    margin-top: 50px;
+    left: -50px;
+    grid-column-start: 1;
+}
+#productImg{
+    height: 200px;
+    width: 150px;
+    border: 5px solid #0F0326;
+    
+}
+#products {
+    display: grid;
+    position: relative;  
+}
+dd {
+    padding-left: 25px;
+}
+dt {
+    margin-left: 65px;
+}
+/* styles for game */
+#game{
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 50px;
+}
+
+#game p {
+    text-align: left;
+    grid-column-start: 1;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+#game form {
+    text-align: left;
+    grid-column-start: 2;
+}
+#submitBtn {
+    margin-right: 500px;
+}
+/* styles for contact and forms */
+#contact{
+    
+    background-color: #0F0326;
+    color: #F5F7DC;
+    width: 100%;
+    padding-top: 10px;
+}
+#contact h2 {
+    text-align: center;
+}
+fieldset{
+    border-style: none;
+}
+#form {
+    margin-top: 50px;
+    text-align: center;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+input {
+    margin: 10px
+}
+/* Night mode class */
+.night-mode {
+    background-color: #0F0326;
+    color: #F5F7DC;
+}
